@@ -56,6 +56,10 @@ git clone git@github.com:trinityrnaseq/trinityrnaseq.git
 git clone git@github.com:TransDecoder/TransDecoder.git
 (cd TransDecoder && make)
 
+# cufflinks
+wget http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz
+tar xpfz cufflinks-2.2.1.Linux_x86_64.tar.gz
+
 # augustus
 wget http://bioinf.uni-greifswald.de/augustus/binaries/old/augustus-3.0.2.tar.gz
 tar xfpz augustus-3.0.2.tar.gz 
@@ -86,7 +90,7 @@ rm *.zip *.gz *.bz2
 ```
 
 ```R
-# R for jmarzec / lpryszcz
+# jmarzec
 # sudo R
 source("http://bioconductor.org/biocLite.R"); biocLite("affy")
 source("http://bioconductor.org/biocLite.R"); biocLite("affyPLM")
@@ -100,9 +104,13 @@ source("http://bioconductor.org/biocLite.R"); biocLite("hgu133plus2.db")
 source("http://bioconductor.org/biocLite.R"); biocLite("limma")
 source("http://bioconductor.org/biocLite.R"); biocLite("simpleaffy")
 source("http://bioconductor.org/biocLite.R"); biocLite("sva")
+
+# lpryszcz
 source("http://bioconductor.org/biocLite.R"); biocLite("DESeq")
 source("http://bioconductor.org/biocLite.R"); biocLite("DESeq2")
+source("http://bioconductor.org/biocLite.R"); biocLite("cummeRbund")
 
+# rhamilton
 install.packages("devtools")
 library(devtools)
 install_github("al2na/methylKit", build_vignettes=FALSE, 
