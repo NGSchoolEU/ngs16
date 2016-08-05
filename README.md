@@ -9,6 +9,8 @@ Table of content
 ```bash
 # admin
 sudo apt install git htop screen python-pip
+sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev 
+
 sudo -H pip install -U pip
 
 # biotools
@@ -16,7 +18,7 @@ sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv 
 sudo -H pip install -U numpy matplotlib biopython pysam
 
 # tools for speakers https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0
-sudo apt install tophat bowtie bowtie2 idba ray trinity picard-tools igv
+sudo apt install tophat bowtie bowtie2 idba ray trinity tabix picard-tools igv 
 sudo apt install blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
 
 # R for jmarzec / lpryszcz
@@ -36,6 +38,41 @@ source("http://bioconductor.org/biocLite.R"); biocLite("sva")
 source("http://bioconductor.org/biocLite.R"); biocLite("DESeq")
 source("http://bioconductor.org/biocLite.R"); biocLite("DESeq2")
 
+mkdir src && cd src
+# bin
+git clone git@github.com:lpryszcz/bin.git
+
+# redundans
+git clone git@github.com:lpryszcz/redundans.git
+## install SSPACE & GapCloser
+wget -q http://www.baseclear.com/base/download/41SSPACE-STANDARD-3.0_linux-x86_64.tar.gz
+tar xpfz 41SSPACE-STANDARD-3.0_linux-x86_64.tar.gz
+ln -s SSPACE-STANDARD-3.0_linux-x86_64 SSPACE
+wget -q -O- http://cpansearch.perl.org/src/GBARR/perl5.005_03/lib/getopts.pl > SSPACE/dotlib/getopts.pl
+wget -q http://downloads.sourceforge.net/project/soapdenovo2/GapCloser/bin/r6/GapCloser-bin-v1.12-r6.tgz
+tar xpfz GapCloser-bin-v1.12-r6.tgz
+rm 41SSPACE-STANDARD-3.0_linux-x86_64.tar.gz GapCloser-bin-v1.12-r6.tgz GapCloser_Manual.pdf
+## test
+source /ngschool/.bashrc
+(cd redundans && ./redundans.py -v -i test/*.fq.gz -f test/contigs.fa -o test/run1 --sspacebin $SSPACEBIN)
+
+# trinity & transdecoder
+git clone git@github.com:trinityrnaseq/trinityrnaseq.git
+(cd trinityrnaseq && make)
+git clone git@github.com:TransDecoder/TransDecoder.git
+(cd TransDecoder && make)
+
+# augustus
+wget http://bioinf.uni-greifswald.de/augustus/binaries/old/augustus-3.0.2.tar.gz
+tar xfpz augustus-3.0.2.tar.gz 
+rm augustus-3.0.2.tar.gz 
+ln -s augustus-3.0.2ln -s augustus
+(cd augustus/src && make)
+
+
+
+# 
+sudo -H pip install git+https://github.com/ewels/MultiQC.git
 
 ```
 
