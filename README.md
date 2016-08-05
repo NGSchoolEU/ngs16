@@ -16,7 +16,8 @@ sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv 
 sudo -H pip install -U numpy matplotlib biopython pysam
 
 # tools for speakers https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0
-sudo apt install tophat bowtie bowtie2 idba ray trinity picard-tools igv blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
+sudo apt install tophat bowtie bowtie2 idba ray trinity picard-tools igv
+sudo apt install blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
 
 # R for jmarzec / lpryszcz
 sudo R
