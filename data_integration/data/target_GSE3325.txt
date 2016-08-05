@@ -1,0 +1,13 @@
+Name	FileName	Target
+GSE3325_1	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74875.CEL	Normal
+GSE3325_2	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74876.CEL	Normal
+GSE3325_3	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74877.CEL	Normal
+GSE3325_4	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74879.CEL	Normal
+GSE3325_5	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74880.CEL	Normal
+GSE3325_6	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74881.CEL	Tumour
+GSE3325_7	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74882.CEL	Tumour
+GSE3325_8	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74883.CEL	Tumour
+GSE3325_9	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74884.CEL	Tumour
+GSE3325_10	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74885.CEL	Tumour
+GSE3325_11	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74886.CEL	Tumour
+GSE3325_12	/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74887.CEL	Tumour

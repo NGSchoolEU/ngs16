@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>arrayQualityMetrics report for GSE3325</title>
+
+<script language="JavaScript" src="arrayQualityMetrics.js"></script>
+<link rel="stylesheet" type="text/css" href="arrayQualityMetrics.css"></link>
+</head>
+<body onload="reportinit()"><hr><h1>arrayQualityMetrics report for GSE3325</h1><hr><UL><a href="#S1"><br><li class='tocsection'>Section 1: Array intensity distributions</li><UL></a><li class='tocmodule'>Boxplots</li></UL><a href="#S2"><br><li class='tocsection'>Section 2: Between array comparison</li><UL></a><li class='tocmodule'>Distances between arrays</li></UL><a href="#S3"><br><li class='tocsection'>Section 3: Individual array quality</li><UL></a><li class='tocmodule'>MA plots</li></UL><a href="#S4"><br><li class='tocsection'>Section 4: Affymetrix specific plots</li><UL></a><li class='tocmodule'>Relative Log Expression (RLE)</li><li class='tocmodule'>Normalized Unscaled Standard Error (NUSE)</li></UL></UL><hr><a name="arraymetadata" id="arraymetadata-h" href="javascript: toggle('arraymetadata')" style="text-decoration:none;font-weight:bold;font-size:larger">- Array metadata and outlier detection overview</a><br>
+
+<div id="arraymetadata-b" style="display:block">
+<table style="margin-left:auto;text-align:right;" border="1">
+<tr>
+<td style="font-weight:bold"> </td><td style="font-weight:bold">array</td><td style="font-weight:bold">sampleNames</td><td style="font-weight:bold"><a href="#box">*1</a></td><td style="font-weight:bold"><a href="#hm">*2</a></td><td style="font-weight:bold"><a href="#ma">*3</a></td><td style="font-weight:bold"><a href="#rle">*4</a></td><td style="font-weight:bold"><a href="#nuse">*5</a></td><td style="font-weight:bold">FileName</td><td style="font-weight:bold">Target</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(1)'></td><td bgcolor="#ffffff">1</td><td bgcolor="#ffffff">GSE3325_1</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74875.CEL</td><td bgcolor="#ffffff">Normal</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(2)'></td><td bgcolor="#e0e0f0">2</td><td bgcolor="#d0d0ff">GSE3325_2</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74876.CEL</td><td bgcolor="#e0e0f0">Normal</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(3)'></td><td bgcolor="#ffffff">3</td><td bgcolor="#ffffff">GSE3325_3</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74877.CEL</td><td bgcolor="#ffffff">Normal</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(4)'></td><td bgcolor="#e0e0f0">4</td><td bgcolor="#d0d0ff">GSE3325_4</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74879.CEL</td><td bgcolor="#e0e0f0">Normal</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(5)'></td><td bgcolor="#ffffff">5</td><td bgcolor="#ffffff">GSE3325_5</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74880.CEL</td><td bgcolor="#ffffff">Normal</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(6)'></td><td bgcolor="#e0e0f0">6</td><td bgcolor="#d0d0ff">GSE3325_6</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74881.CEL</td><td bgcolor="#e0e0f0">Tumour</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(7)'></td><td bgcolor="#ffffff">7</td><td bgcolor="#ffffff">GSE3325_7</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74882.CEL</td><td bgcolor="#ffffff">Tumour</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(8)'></td><td bgcolor="#e0e0f0">8</td><td bgcolor="#d0d0ff">GSE3325_8</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74883.CEL</td><td bgcolor="#e0e0f0">Tumour</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(9)'></td><td bgcolor="#ffffff">9</td><td bgcolor="#ffffff">GSE3325_9</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">x</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74884.CEL</td><td bgcolor="#ffffff">Tumour</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(10)'></td><td bgcolor="#e0e0f0">10</td><td bgcolor="#d0d0ff">GSE3325_10</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74885.CEL</td><td bgcolor="#e0e0f0">Tumour</td></tr>
+<tr>
+<td bgcolor="#ffffff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(11)'></td><td bgcolor="#ffffff">11</td><td bgcolor="#ffffff">GSE3325_11</td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff"></td><td bgcolor="#ffffff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74886.CEL</td><td bgcolor="#ffffff">Tumour</td></tr>
+<tr>
+<td bgcolor="#d0d0ff"><input type='checkbox' name='ReportObjectCheckBoxes' value='' onchange='checkboxEvent(12)'></td><td bgcolor="#e0e0f0">12</td><td bgcolor="#d0d0ff">GSE3325_12</td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff"></td><td bgcolor="#e0e0f0"></td><td bgcolor="#d0d0ff">/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/CEL_files/GSE3325/GSM74887.CEL</td><td bgcolor="#e0e0f0">Tumour</td></tr>
+</table>
+<br>The columns named *1, *2, ... indicate the calls from the different outlier detection methods:<OL><LI> outlier detection by <a href="#box">Boxplots</a></LI><LI> outlier detection by <a href="#hm">Distances between arrays</a></LI><LI> outlier detection by <a href="#ma">MA plots</a></LI><LI> outlier detection by <a href="#rle">Relative Log Expression (RLE)</a></LI><LI> outlier detection by <a href="#nuse">Normalized Unscaled Standard Error (NUSE)</a></LI></OL>The outlier detection criteria are explained below in the respective sections. Arrays that were called outliers by at least one criterion are marked by checkbox selection in this table, and are indicated by highlighted lines or points in some of the plots below. By clicking the checkboxes in the table, or on the corresponding points/lines in the plots, you can modify the selection. To reset the selection, reload the HTML page in your browser.<br><br>At the scope covered by this software, outlier detection is a poorly defined question, and there is no 'right' or 'wrong' answer. These are hints which are intended to be followed up manually. If you want to automate outlier detection, you need to limit the scope to a particular platform and experimental design, and then choose and calibrate the metrics used.<br></div><hr><h2><a name= 'S1'>Section 1: Array intensity distributions</a></h2>
+
+<a name="box" id="box-h" href="javascript: toggle('box')" style="text-decoration:none;font-weight:bold;font-size:larger">- Figure 1: Boxplots.</a><br>
+
+<div id="box-b" style="display:block">
+<img src="box.png" border="0" alt="box.png" id="Figls:box"></img><br>
+<b>Figure 1</b><a href="box.pdf"> (PDF file)</a> shows boxplots representing summaries of the signal intensity distributions of the arrays. Each box corresponds to one array. Typically, one expects the boxes to have similar positions and widths. If the distribution of an array is very different from the others, this may indicate an experimental problem. Outlier detection was performed by computing the Kolmogorov-Smirnov statistic <i>K<sub>a</sub></i> between each array's distribution and the distribution of the pooled data.<br><br><br>
+</div>
+
+<a name="out box" id="out box-h" href="javascript: toggle('out box')" style="text-decoration:none;font-weight:bold;font-size:larger">+ Figure 2: Outlier detection for Boxplots.</a><br>
+
+<div id="out box-b" style="display:none">
+<img src="out box.png" border="0" alt="out box.png" id="Figls:out box"></img><br>
+<b>Figure 2</b><a href="out box.pdf"> (PDF file)</a> shows a bar chart of the Kolmogorov-Smirnov statistic <i>K<sub>a</sub></i>, the outlier detection criterion from the previous figure. The bars are shown in the original order of the arrays. Based on the distribution of the values across all arrays, a threshold of 0.48 was determined, which is indicated by the vertical line. None of the arrays exceeded the threshold and was considered an outlier.<br><br><br>
+</div><hr><h2><a name= 'S2'>Section 2: Between array comparison</a></h2>
+
+<a name="hm" id="hm-h" href="javascript: toggle('hm')" style="text-decoration:none;font-weight:bold;font-size:larger">- Figure 3: Distances between arrays.</a><br>
+
+<div id="hm-b" style="display:block">
+<img src="hm.png" border="0" alt="hm.png" id="Figls:hm"></img><br>
+<b>Figure 3</b><a href="hm.pdf"> (PDF file)</a> shows a false color heatmap of the distances between arrays. The color scale is chosen to cover the range of distances encountered in the dataset. Patterns in this plot can indicate clustering of the arrays either because of intended biological or unintended experimental factors (batch effects). The distance <i>d<sub>ab</sub></i> between two arrays <i>a</i> and <i>b</i> is computed as the mean absolute difference (L<sub>1</sub>-distance) between the data of the arrays (using the data from all probes without filtering). In formula, <i>d<sub>ab</sub></i> = mean | <i>M<sub>ai</sub> - M<sub>bi</sub></i> |, where <i>M<sub>ai</sub></i> is the value of the <i>i</i>-th probe on the <i>a</i>-th array. Outlier detection was performed by looking for arrays for which the sum of the distances to all other arrays, <i>S<sub>a</sub></i> = &Sigma;<sub><i>b</i></sub> <i>d<sub>ab</sub></i> was exceptionally large. No such arrays were detected.<br><br><br>
+</div>
+
+<a name="out hm" id="out hm-h" href="javascript: toggle('out hm')" style="text-decoration:none;font-weight:bold;font-size:larger">+ Figure 4: Outlier detection for Distances between arrays.</a><br>
+
+<div id="out hm-b" style="display:none">
+<img src="out hm.png" border="0" alt="out hm.png" id="Figls:out hm"></img><br>
+<b>Figure 4</b><a href="out hm.pdf"> (PDF file)</a> shows a bar chart of the sum of distances to other arrays <i>S<sub>a</sub></i>, the outlier detection criterion from the previous figure. The bars are shown in the original order of the arrays. Based on the distribution of the values across all arrays, a threshold of 7.42 was determined, which is indicated by the vertical line. None of the arrays exceeded the threshold and was considered an outlier.<br><br><br>
+</div><hr><h2><a name= 'S3'>Section 3: Individual array quality</a></h2>
+
+<a name="ma" id="ma-h" href="javascript: toggle('ma')" style="text-decoration:none;font-weight:bold;font-size:larger">- Figure 5: MA plots.</a><br>
+
+<div id="ma-b" style="display:block">
+<img src="ma.png" border="0" alt="ma.png" id="Figls:ma"></img><br>
+<b>Figure 5</b><a href="ma.pdf"> (PDF file)</a> shows MA plots. M and A are defined as:<br> M = log<sub>2</sub>(I<sub>1</sub>) - log<sub>2</sub>(I<sub>2</sub>)<br> A = 1/2 (log<sub>2</sub>(I<sub>1</sub>)+log<sub>2</sub>(I<sub>2</sub>)),<br> where I<sub>1</sub> is the intensity of the array studied,and I<sub>2</sub> is the intensity of a "pseudo"-array that consists of the median across arrays.  Typically, we expect the mass of the distribution in an MA plot to be concentrated along the M = 0 axis,  and there should be no trend in M as a function of A. If there is a trend in the lower range of A, this often  indicates that the arrays have different background intensities; this may be addressed by background correction.  A trend in the upper range of A can indicate saturation of the measurements; in mild cases, this may be addressed  by non-linear normalisation (e.g. quantile normalisation).<br> Outlier detection was performed by computing Hoeffding's statistic <i>D<sub>a</sub></i> on the joint distribution of A and M for each array.  Shown are first the 4 arrays with the highest values of <i>D<sub>a</sub></i>, then the 4 arrays with the lowest values.  The value of <i>D<sub>a</sub></i> is shown in the panel headings.  0 arrays had <i>D<sub>a</sub></i>&gt;0.15 and were marked as outliers.  For more information on Hoeffing's <i>D</i>-statistic, please see the manual page of the function  <tt>hoeffd</tt> in the <tt>Hmisc</tt> package.<br><br><br>
+</div>
+
+<a name="out ma" id="out ma-h" href="javascript: toggle('out ma')" style="text-decoration:none;font-weight:bold;font-size:larger">+ Figure 6: Outlier detection for MA plots.</a><br>
+
+<div id="out ma-b" style="display:none">
+<img src="out ma.png" border="0" alt="out ma.png" id="Figls:out ma"></img><br>
+<b>Figure 6</b><a href="out ma.pdf"> (PDF file)</a> shows a bar chart of the <i>D<sub>a</sub></i>, the outlier detection criterion from the previous figure. The bars are shown in the original order of the arrays. A threshold of 0.15 was used, which is indicated by the vertical line. None of the arrays exceeded the threshold and was considered an outlier.<br><br><br>
+</div><hr><h2><a name= 'S4'>Section 4: Affymetrix specific plots</a></h2>
+
+<a name="rle" id="rle-h" href="javascript: toggle('rle')" style="text-decoration:none;font-weight:bold;font-size:larger">- Figure 7: Relative Log Expression (RLE).</a><br>
+
+<div id="rle-b" style="display:block">
+<img src="rle.png" border="0" alt="rle.png" id="Figls:rle"></img><br>
+<b>Figure 7</b><a href="rle.pdf"> (PDF file)</a> shows the <i>Relative Log Expression (RLE)</i> plot. Arrays whose boxes are centered away from 0 and/or are more spread out are potentially problematic. Outlier detection was performed by computing the Kolmogorov-Smirnov statistic <i>R<sub>a</sub></i> between each array's RLE values and the pooled, overall distribution of RLE values.<br><br><br>
+</div>
+
+<a name="out rle" id="out rle-h" href="javascript: toggle('out rle')" style="text-decoration:none;font-weight:bold;font-size:larger">+ Figure 8: Outlier detection for Relative Log Expression (RLE).</a><br>
+
+<div id="out rle-b" style="display:none">
+<img src="out rle.png" border="0" alt="out rle.png" id="Figls:out rle"></img><br>
+<b>Figure 8</b><a href="out rle.pdf"> (PDF file)</a> shows a bar chart of the Kolmogorov-Smirnov statistic <i>R<sub>a</sub></i> of the RLE values, the outlier detection criterion from the previous figure. The bars are shown in the original order of the arrays. Based on the distribution of the values across all arrays, a threshold of 0.182 was determined, which is indicated by the vertical line. One array exceeded the threshold and was considered an outlier.<br><br><br>
+</div>
+
+<a name="nuse" id="nuse-h" href="javascript: toggle('nuse')" style="text-decoration:none;font-weight:bold;font-size:larger">- Figure 9: Normalized Unscaled Standard Error (NUSE).</a><br>
+
+<div id="nuse-b" style="display:block">
+<img src="nuse.png" border="0" alt="nuse.png" id="Figls:nuse"></img><br>
+<b>Figure 9</b><a href="nuse.pdf"> (PDF file)</a> shows the <i>Normalized Unscaled Standard Error (NUSE)</i> plot. For each array, the boxes should be centered around 1. An array were the values are elevated relative to the other arrays is typically of lower quality. Outlier detection was performed by computing the 75% quantile <i>N<sub>a</sub></i> of each array's NUSE values and looking for arrays with large <i>N<sub>a</sub></i>.<br><br><br>
+</div>
+
+<a name="out nuse" id="out nuse-h" href="javascript: toggle('out nuse')" style="text-decoration:none;font-weight:bold;font-size:larger">+ Figure 10: Outlier detection for Normalized Unscaled Standard Error (NUSE).</a><br>
+
+<div id="out nuse-b" style="display:none">
+<img src="out nuse.png" border="0" alt="out nuse.png" id="Figls:out nuse"></img><br>
+<b>Figure 10</b><a href="out nuse.pdf"> (PDF file)</a> shows a bar chart of the <i>N<sub>a</sub></i>, the outlier detection criterion from the previous figure. The bars are shown in the original order of the arrays. Based on the distribution of the values across all arrays, a threshold of 1.09 was determined, which is indicated by the vertical line. None of the arrays exceeded the threshold and was considered an outlier.<br><br><br>
+</div><hr><span style="font-size:9pt">This report has been created with arrayQualityMetrics 3.28.2 under R version 3.3.1 (2016-06-21).</span><hr>
+<br/><br/><font size="-2">(Page generated on Thu Aug  4 18:44:10 2016 by <a href="http://www.embl.de/~gpau/hwriter/index.html">hwriter</a> )</font><br/>
+</body></html>

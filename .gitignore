@@ -62,3 +62,7 @@ target/
 *~
 [#]*[#]
 .\#*
+
+# R
+.DS_Store
+.Rhistory
