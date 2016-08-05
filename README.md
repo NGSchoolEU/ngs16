@@ -13,6 +13,7 @@ source /ngschool/.bashrc
 ```
 
 ## Server setup
+[Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)
 ```bash
 # admin
 sudo apt install git htop screen python-pip
@@ -24,8 +25,10 @@ sudo -H pip install -U pip
 sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align
 sudo -H pip install -U numpy matplotlib biopython pysam
 
-# tools for speakers https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0
+# tools for speakers
 sudo apt install tophat bowtie bowtie2 idba ray trinity tabix picard-tools igv 
+
+# first update R to 3.3+ https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/
 sudo apt install blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
 
 mkdir src && cd src
