@@ -119,4 +119,10 @@ library(devtools)
 install_github("al2na/methylKit", build_vignettes=FALSE, 
   repos=BiocInstaller::biocinstallRepos(),
   dependencies=TRUE)
+
+# mlapinski
+install.packages('caTools')
+source('http://bioconductor.org/biocLite.R'); biocLite('Rsamtools')
+library(devtools); install_github("hms-dbmi/spp")
+
 ```
