@@ -13,7 +13,7 @@ source /ngschool/.bashrc
 ```
 
 ## Server setup
-[Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)
+[Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)  
 If you have no github account or no read permission for given repository, use `git clone https://` instead of `git clone git@`. 
 ```bash
 # admin
