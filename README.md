@@ -14,7 +14,8 @@ source /ngschool/.bashrc
 
 ## Server setup
 [Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)  
-If you have no github account or no read permission for given repository, use `git clone https://` instead of `git clone git@`. 
+If you have no github account or no read permission for given repository, use `git clone https://` instead of `git clone git@`.
+
 ```bash
 # admin
 sudo apt install git htop screen wget python-pip
@@ -126,4 +127,10 @@ install.packages('caTools')
 source('http://bioconductor.org/biocLite.R'); biocLite('Rsamtools')
 library(devtools); install_github("hms-dbmi/spp")
 
+```
+
+If you get an error `Package 'igv' has no installation candidate`, make sure the "multiverse" repository is enabled. Try this:
+
+``` bash
+echo 'deb http://archive.ubuntu.com/ubuntu/ xenial multiverse' >> /etc/apt/sources.list
 ```
