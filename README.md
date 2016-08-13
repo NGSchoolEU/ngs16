@@ -138,3 +138,5 @@ If you get an error `Package 'igv' has no installation candidate`, make sure the
 ``` bash
 echo 'deb http://archive.ubuntu.com/ubuntu/ xenial multiverse' >> /etc/apt/sources.list
 ```
+
+In the case IGV hangs, you can try running it from the website. Navigate to: http://www.broadinstitute.org/software/igv/download, select appropriate version (2GB is the safest) and press `Launch`. 
