@@ -61,6 +61,10 @@ git clone git@github.com:trinityrnaseq/trinityrnaseq.git
 git clone git@github.com:TransDecoder/TransDecoder.git
 (cd TransDecoder && make)
 
+# star
+git clone --recursive https://github.com/alexdobin/STAR.git
+(cd STAR && make STAR)
+
 # cufflinks
 wget http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz
 tar xpfz cufflinks-2.2.1.Linux_x86_64.tar.gz
