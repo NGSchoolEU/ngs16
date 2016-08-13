@@ -1,0 +1,18 @@
+[submodule "bin"]
+	path = src/bin
+	url = git@github.com:lpryszcz/bin.git
+[submodule "redundans"]
+	path = src/redundans
+	url = git@github.com:lpryszcz/redundans.git
+[submodule "Bismark"]
+	path = src/Bismark
+	url = git@github.com:FelixKrueger/Bismark.git
+[submodule "convector"]
+	path = src/convector
+	url = git@github.com:parseq/convector.git
+[submodule "trinityrnaseq"]
+	path = src/trinityrnaseq
+	url = git@github.com:trinityrnaseq/trinityrnaseq.git
+[submodule "TransDecoder"]
+	path = src/TransDecoder
+	url = git@github.com:TransDecoder/TransDecoder.git
