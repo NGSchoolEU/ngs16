@@ -17,7 +17,7 @@ source /ngschool/.bashrc
 If you have no github account or no read permission for given repository, use `git clone https://` instead of `git clone git@`. 
 ```bash
 # admin
-sudo apt install git htop screen python-pip
+sudo apt install git htop screen wget python-pip
 sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev libgsl2
 
 sudo -H pip install -U pip
