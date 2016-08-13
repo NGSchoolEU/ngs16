@@ -18,7 +18,7 @@ If you have no github account or no read permission for given repository, use `g
 ```bash
 # admin
 sudo apt install git htop screen python-pip
-sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev libgsl0ldbl
+sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev libgsl2
 
 sudo -H pip install -U pip
 
