@@ -48,6 +48,9 @@ git clone git@github.com:lpryszcz/bin.git
 # spades
 wget http://spades.bioinf.spbau.ru/release3.9.0/SPAdes-3.9.0-Linux.tar.gz && tar xpfz SPAdes-3.9.0-Linux.tar.gz
 
+# quast
+git clone git@github.com:ablab/quast.git
+(cd quast && ./setup.py install)
 
 # redundans
 git clone git@github.com:lpryszcz/redundans.git
