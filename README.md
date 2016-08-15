@@ -32,8 +32,8 @@ sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-
 sudo -H pip install -U pip
 
 # biotools
-sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align
-sudo -H pip install -U numpy matplotlib biopython pysam
+sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align biopython
+sudo -H pip install -U numpy matplotlib pysam
 
 # tools for speakers
 sudo apt install tophat bowtie bowtie2 idba ray trinity tabix picard-tools igv 
