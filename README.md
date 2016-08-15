@@ -11,6 +11,13 @@ In order to initialise all dependencies, execute:
 ```bash
 source /ngschool/.bashrc
 ```
+Note, if you clone the repository in different directory than `/ngschool`,
+you will need to update NGSchoolDir in `.bashrc` file to this path
+ie. if you clone course materials in /home/lpryszcz/ngschool use:
+```
+NGSchoolDir=/home/lpryszcz/ngschool
+```
+
 
 ## Server setup
 [Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)  
@@ -18,7 +25,7 @@ If you have no github account or no read permission for given repository, use `g
 
 ```bash
 # admin
-sudo apt install git htop screen wget python-pip
+sudo apt install git htop screen wget python-pip python-dev
 sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev libgsl2
 
 sudo -H pip install -U pip
