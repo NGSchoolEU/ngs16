@@ -1,7 +1,7 @@
 
 NGSchoolDir=/ngschool
 
-export PATH=$PATH:$NGSchoolDir/bin:$NGSchoolDir/src
+export PATH=$NGSchoolDir/src/FastQC:$PATH:$NGSchoolDir/src/bin:$NGSchoolDir/src
 export PATH=$PATH:$NGSchoolDir/src/SPAdes-3.9.0-Linux/bin:$NGSchoolDir/src/quast
 export PATH=$PATH:$NGSchoolDir/src/trinityrnaseq:$NGSchoolDir/src/TransDecoder
 export PATH=$PATH:$NGSchoolDir/src/STAR/bin/Linux_x86_64:$NGSchoolDir/src/salmon/build/src:$NGSchoolDir/src/cufflinks-2.2.1.Linux_x86_64:$NGSchoolDir/src/

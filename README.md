@@ -25,7 +25,7 @@ If you have no github account or no read permission for given repository, use `g
 
 ```bash
 # admin
-sudo apt install git htop screen wget python-pip python-dev cmake
+sudo apt install git htop screen wget python-pip python-dev cmake eog
 sudo apt install libboost-all-dev libbz2-dev libtbb-dev
 sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev zlib1g-dev libgsl2
 
@@ -33,7 +33,8 @@ sudo -H pip install -U pip
 
 # biotools
 sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align biopython
-sudo -H pip install -U numpy matplotlib pysam
+sudo apt install python-numpy python-matplotlib
+sudo -H pip install -U pysam
 
 # tools for speakers
 sudo apt install tophat bowtie bowtie2 idba ray trinity tabix picard-tools igv 
@@ -44,6 +45,10 @@ sudo apt install blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
 mkdir src && cd src
 # bin
 git clone git@github.com:lpryszcz/bin.git
+
+# FastQC
+wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip
+unzip fastqc_v0.11.5.zip && chmod +x FastQC/fastqc
 
 # spades
 wget http://spades.bioinf.spbau.ru/release3.9.0/SPAdes-3.9.0-Linux.tar.gz && tar xpfz SPAdes-3.9.0-Linux.tar.gz
