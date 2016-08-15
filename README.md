@@ -32,12 +32,12 @@ sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-
 sudo -H pip install -U pip
 
 # biotools
-sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align biopython
+sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align biopython hmmer
 sudo apt install python-numpy python-matplotlib
 sudo -H pip install -U pysam
 
 # tools for speakers
-sudo apt install tophat bowtie bowtie2 idba ray trinity tabix picard-tools igv 
+sudo apt install tophat bowtie bowtie2 idba ray tabix picard-tools igv 
 
 # first update R to 3.3+ https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/
 sudo apt install blast2 tigr-glimmer exonerate muscle fasttree mcl r-base
