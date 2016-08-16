@@ -1,0 +1,35 @@
+echo
+echo '################################################'
+echo '# Welcome to the ChIP-Seq data analysis course #'
+echo -e '#                \033[1mNGSchool 2016\033[0m                 #'
+echo '################################################'
+echo
+echo 'Loading Python2.7 virtual environment'
+
+source ./chip_seq/bin/activate
+
+echo
+echo -e '\033[1mThe following packages have been activated:\033[0m'
+echo -e 'jupyter 1.0.0
+matplotlib 1.5.1
+numpy 1.11.1
+cutadapt 1.10
+macs2 2.1.1'
+echo
+
+echo -e '\033[1mExporting PATH variable containing the following programs:\033[0m'
+echo -e 'FastQC 0.11.5
+bwa 0.7.15-r1140
+samtools 1.3.1 (compiled --without-curses, no tview)
+gawk 4.1.3 (incorrectly linked by libtool)
+bedtools 2.26.0'
+echo
+
+export PATH=./.local/bin:$PATH
+export MANPATH=./.local/man:./local/share/man:$MANPATH
+
+gversion=`ldd --version | head -n1 | cut -d")" -f2 | cut -d" " -f2`
+echo 'Detected GLIBC version:' $gversion
+if [[ "$gversion" == "2.21" ]]; then
+  export PATH=./.local_2_21/bin:$PATH
+fi

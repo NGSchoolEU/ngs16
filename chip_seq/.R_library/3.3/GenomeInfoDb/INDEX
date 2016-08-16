@@ -1,0 +1,16 @@
+GenomeDescription-class
+                        GenomeDescription objects
+Seqinfo-class           Seqinfo objects
+available.species       Returns a data.frame that lists the available
+                        species strings and their taxonomy Ids.
+fetchExtendedChromInfoFromUCSC
+                        Fetching chromosomes info for some of the UCSC
+                        genomes
+rankSeqlevels           Assign sequence IDs to sequence names
+seqinfo                 Accessing/modifying sequence information
+seqlevels-wrappers      Convenience wrappers to the seqlevels() getter
+                        and setter
+seqlevelsStyle          Conveniently rename the seqlevels of an object
+                        according to a given style
+speciesMap              Species Mapper object and/or list of valid
+                        taxonomy Ids

@@ -1,0 +1,84 @@
+import(methods)
+import(futile.logger)
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 classes
+###
+
+exportClass(
+    BiocParallelParam, 
+    MulticoreParam, 
+    SnowParam,
+    DoparParam, 
+    SerialParam, 
+    BatchJobsParam
+)
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export non-generic functions
+###
+
+export(
+    MulticoreParam, SnowParam, DoparParam, SerialParam, BatchJobsParam,
+
+    ## register
+    register, registered, bpparam,
+
+    ## error handlers
+    bpresume, bplasterror,
+
+    ## helpers
+    multicoreWorkers, snowWorkers, bpvalidate, bpok, 
+    bpslaveLoop, bprunMPIslave 
+)
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 generics and methods defined in BiocParallel 
+###
+
+export(
+    bplapply, bpvec, bpvectorize, bpmapply, bpaggregate, bpiterate,
+
+    ## bp-controls
+    bpworkers, "bpworkers<-", bpbackend, "bpbackend<-", 
+    bptasks, "bptasks<-", bpjobname, "bpjobname<-",
+    bpstart, bpstop, bpisup, 
+    bpcatchErrors, "bpcatchErrors<-", bpstopOnError, "bpstopOnError<-", 
+    bpprogressbar, "bpprogressbar<-", bpRNGseed, "bpRNGseed<-",
+    bptimeout, "bptimeout<-", bplog, "bplog<-", bplogdir, "bplogdir<-",
+    bpthreshold, "bpthreshold<-", bpresultdir, "bpresultdir<-",
+
+    ## schedule
+    bpschedule
+)
+
+### Same list as above.
+exportMethods(
+    bplapply, bpvec, bpvectorize, bpmapply, bpaggregate, bpiterate,
+
+    ## bp-controls
+    bpworkers, "bpworkers<-", bpbackend, "bpbackend<-", 
+    bptasks, "bptasks<-", bpjobname, "bpjobname<-",
+    bpstart, bpstop, bpisup, 
+    bpcatchErrors, "bpcatchErrors<-", bpstopOnError, "bpstopOnError<-", 
+    bpprogressbar, "bpprogressbar<-", bpRNGseed, "bpRNGseed<-",
+    bptimeout, "bptimeout<-", bplog, "bplog<-", bplogdir, "bplogdir<-",
+    bpthreshold, "bpthreshold<-", bpresultdir, "bpresultdir<-",
+
+    ## schedule
+    bpschedule
+)
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 methods for generics not defined in BiocParallel 
+###
+
+exportMethods(
+    show
+)
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S3 methods 
+###
+
+export(`print.remote-error`)
