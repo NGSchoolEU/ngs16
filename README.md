@@ -32,7 +32,7 @@ sudo apt install libboost-iostreams-dev libboost-system-dev libboost-filesystem-
 sudo -H pip install -U pip
 
 # biotools
-sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align biopython hmmer
+sudo apt install fastqc soapdenovo2 ray velvet mummer bwa samtools bedtools igv fastx-toolkit last-align python-biopython hmmer
 sudo apt install python-numpy python-matplotlib
 sudo -H pip install -U pysam
 
