@@ -1,7 +1,7 @@
 This is cutadapt 1.10 with Python 2.7.12
 Command line parameters: -f fastq -e 0.1 -q 20 -O 3 -a AGATCGGAAGAGC -m 20 -o cutadapt/trimmed/input.trimmed.fq.gz reads/input.fastq.gz
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 14.59 s (9 us/read; 7.03 M reads/minute).
+Finished in 14.45 s (8 us/read; 7.10 M reads/minute).
 
 === Summary ===
 

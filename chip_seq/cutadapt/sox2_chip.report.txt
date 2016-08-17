@@ -1,7 +1,7 @@
 This is cutadapt 1.10 with Python 2.7.12
 Command line parameters: -f fastq -e 0.1 -q 20 -O 3 -a AGATCGGAAGAGC -m 20 -o cutadapt/trimmed/sox2_chip.trimmed.fq.gz reads/sox2_chip.fastq.gz
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 19.73 s (9 us/read; 6.75 M reads/minute).
+Finished in 18.49 s (8 us/read; 7.20 M reads/minute).
 
 === Summary ===
 
