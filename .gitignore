@@ -2,6 +2,11 @@
 #
 proteins.uniprot.fa
 
+# chip_seq
+sox2_chip*.bam
+sox2_chip*.fq.gz
+sox2_chip*.bdg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
