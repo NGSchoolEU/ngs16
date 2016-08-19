@@ -71,7 +71,7 @@ library(gplots)
 
 
 ##### Source script for coloured dendrogram
-source("/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/scripts/a2R_code.R")
+source("a2R_code.R")
 
 
 ################################################################################
@@ -87,13 +87,14 @@ source("/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_
 #===============================================================================
 
 ##### Change working directory to data folder
-setwd("/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data")
+setwd("../data")
 
 
 ##### Read annotation file
 pd <- read.AnnotatedDataFrame(filename = "target_GSE17951.txt" ,header = TRUE, row.name = "Name", sep = "\t")
 
 
+setwd("CEL_files/")
 ##### Read CEL files into an Affybatch
 dat <- ReadAffy(filenames = pd$FileName, sampleNames = sampleNames(pd), phenoData = pd)
 
@@ -104,7 +105,7 @@ dat <- ReadAffy(filenames = pd$FileName, sampleNames = sampleNames(pd), phenoDat
 
 ##### Data quality control using arrayQualityMetrics package
 ##### NOTE: Computationally intense step, may take few minutes to complete
-arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/QC/GSE17951", reporttitle = "arrayQualityMetrics report for GSE17951", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
+arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "../QC/GSE17951", reporttitle = "arrayQualityMetrics report for GSE17951", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
 
 
 ##### Report detected samples to excluded from downstream analysis
@@ -129,7 +130,7 @@ dat <- ReadAffy(filenames = pd$FileName, sampleNames = sampleNames(pd), phenoDat
 
 ##### Data quality control using arrayQualityMetrics package
 ##### NOTE: Computationally intense step, may take few minutes to complete
-arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/QC/GSE55945", reporttitle = "arrayQualityMetrics report for GSE55945", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
+arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "../QC/GSE55945", reporttitle = "arrayQualityMetrics report for GSE55945", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
 
 
 ##### Report detected samples to excluded from downstream analysis
@@ -154,7 +155,7 @@ dat <- ReadAffy(filenames = pd$FileName, sampleNames = sampleNames(pd), phenoDat
 
 ##### Data quality control using arrayQualityMetrics package
 ##### NOTE: Computationally intense step, may take few minutes to complete
-arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/QC/GSE3325", reporttitle = "arrayQualityMetrics report for GSE3325", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
+arrayQuality <- arrayQualityMetrics(expressionset = dat, outdir = "../QC/GSE3325", reporttitle = "arrayQualityMetrics report for GSE3325", force = TRUE, do.logtransform = TRUE, intgroup = "Target")
 
 
 ##### Report detected samples to excluded from downstream analysis
@@ -204,7 +205,7 @@ QCnuse@outliers
 ##### Customising arrayQualityMetrics report
 qm <- list("Boxplot" = QCboxplot, "Heatmap" = QCheatmap, "MAplot" = QCmaplot, "RLE" = QCrle, "NUSE" = QCnuse)
 
-aqm.writereport(modules = qm, reporttitle = "arrayQualityMetrics report for GSE3325", outdir = "/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/QC/GSE3325_custom", arrayTable = pData(dat))
+aqm.writereport(modules = qm, reporttitle = "arrayQualityMetrics report for GSE3325", outdir = "../QC/GSE3325_custom", arrayTable = pData(dat))
 
 
 
@@ -259,13 +260,12 @@ pd <- pd[setdiff(sampleNames(pd), as.vector(samples2exclude))]
 dat <- ReadAffy(filenames = pd$FileName, sampleNames = sampleNames(pd), phenoData = pd)
 
 
+##### Change working directory to results folder
+setwd("../")
 
 ##### Create folder for results
-system("mkdir /Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/results")
-
-##### Change working directory to results folder
-setwd("/Users/marzec01/Desktop/others/workshops/Lechu_Slowacja_bix_workshop_08_2016/workshop/data/results")
-
+system("mkdir results")
+setwd("results/")
 
 
 #===============================================================================
