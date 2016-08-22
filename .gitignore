@@ -1,13 +1,6 @@
 
 #
-proteins.uniprot.fa
-
-# chip_seq
-sox2_chip*.bam
-sox2_chip*.fq.gz
-sox2_chip*.bdg
-
-# Methylome
+chip_seq_precomputed/
 Methylation/SimulatedData_PreAnalysed/
 
 # Byte-compiled / optimized / DLL files
