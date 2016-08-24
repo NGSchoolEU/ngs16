@@ -1,0 +1,48 @@
+Package: GenomicRanges
+Title: Representation and manipulation of genomic intervals and
+        variables defined along a genome
+Description: The ability to efficiently represent and manipulate genomic
+	annotations and alignments is playing a central role when it comes
+	to analyzing high-throughput sequencing data (a.k.a. NGS data).
+	The GenomicRanges package defines general purpose containers for
+	storing and manipulating genomic intervals and variables defined along
+	a genome. More specialized containers for representing and manipulating
+	short alignments against a reference genome, or a matrix-like
+	summarization of an experiment, are defined in the GenomicAlignments
+	and SummarizedExperiment packages respectively. Both packages build
+	on top of the GenomicRanges infrastructure.
+Version: 1.24.2
+Encoding: UTF-8
+Author: P. Aboyoun, H. Pagès, and M. Lawrence
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+biocViews: Genetics, Infrastructure, Sequencing, Annotation, Coverage,
+        GenomeAnnotation
+Depends: R (>= 2.10), methods, BiocGenerics (>= 0.17.5), S4Vectors (>=
+        0.9.47), IRanges (>= 2.5.36), GenomeInfoDb (>= 1.1.20)
+Imports: utils, stats, XVector
+LinkingTo: S4Vectors, IRanges
+Suggests: Biobase, AnnotationDbi (>= 1.21.1), annotate, Biostrings (>=
+        2.25.3), Rsamtools (>= 1.13.53), SummarizedExperiment (>=
+        0.1.5), Matrix, GenomicAlignments, rtracklayer, BSgenome,
+        GenomicFeatures, Gviz, VariantAnnotation, AnnotationHub,
+        DESeq2, DEXSeq, edgeR, KEGGgraph, BiocStyle, digest, RUnit,
+        BSgenome.Hsapiens.UCSC.hg19, BSgenome.Scerevisiae.UCSC.sacCer2,
+        KEGG.db, hgu95av2.db, org.Hs.eg.db, org.Mm.eg.db,
+        org.Sc.sgd.db, pasilla, pasillaBamSubset,
+        TxDb.Athaliana.BioMart.plantsmart22,
+        TxDb.Dmelanogaster.UCSC.dm3.ensGene,
+        TxDb.Hsapiens.UCSC.hg19.knownGene
+License: Artistic-2.0
+Collate: utils.R phicoef.R transcript-utils.R constraint.R
+        strand-utils.R range-squeezers.R GenomicRanges-class.R
+        GenomicRanges-comparison.R GRanges-class.R GPos-class.R
+        DelegatingGenomicRanges-class.R GNCList-class.R
+        GenomicRangesList-class.R GRangesList-class.R
+        makeGRangesFromDataFrame.R RangedData-methods.R
+        findOverlaps-methods.R intra-range-methods.R
+        inter-range-methods.R coverage-methods.R setops-methods.R
+        nearest-methods.R absoluteRanges.R tileGenome.R tile-methods.R
+        genomicvars.R zzz.R
+NeedsCompilation: yes
+Packaged: 2016-06-15 02:21:39 UTC; biocbuild
+Built: R 3.3.1; x86_64-pc-linux-gnu; 2016-08-11 10:14:58 UTC; unix

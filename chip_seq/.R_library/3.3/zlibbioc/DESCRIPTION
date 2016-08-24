@@ -1,0 +1,18 @@
+Package: zlibbioc
+Type: Package
+Title: An R packaged zlib-1.2.5
+Version: 1.18.0
+Author: Martin Morgan
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+Description: This package uses the source code of zlib-1.2.5 to create
+  libraries for systems that do not have these available via other
+  means (most Linux and Mac users should have system-level access to
+  zlib, and no direct need for this package). See the vignette for
+  instructions on use.
+URL: http://bioconductor.org/packages/release/bioc/html/Zlibbioc.html
+License: Artistic-2.0 + file LICENSE
+LazyLoad: yes
+biocViews: Infrastructure
+NeedsCompilation: yes
+Packaged: 2016-05-04 04:03:53 UTC; biocbuild
+Built: R 3.3.1; x86_64-pc-linux-gnu; 2016-08-11 10:14:20 UTC; unix

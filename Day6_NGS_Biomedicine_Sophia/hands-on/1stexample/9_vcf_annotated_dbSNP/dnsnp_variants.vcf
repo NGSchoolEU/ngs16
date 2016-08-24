@@ -1,0 +1,62 @@
+##fileformat=VCFv4.1
+##samtoolsVersion=0.1.18 (r982:295)
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="# high-quality ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Root-mean-square mapping quality of covering reads">
+##INFO=<ID=FQ,Number=1,Type=Float,Description="Phred probability of all samples being the same">
+##INFO=<ID=AF1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele frequency (assuming HWE)">
+##INFO=<ID=AC1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele count (no HWE assumption)">
+##INFO=<ID=G3,Number=3,Type=Float,Description="ML estimate of genotype frequencies">
+##INFO=<ID=HWE,Number=1,Type=Float,Description="Chi^2 based HWE test P-value based on G3">
+##INFO=<ID=CLR,Number=1,Type=Integer,Description="Log ratio of genotype likelihoods with and without the constraint">
+##INFO=<ID=UGT,Number=1,Type=String,Description="The most probable unconstrained genotype configuration in the trio">
+##INFO=<ID=CGT,Number=1,Type=String,Description="The most probable constrained genotype configuration in the trio">
+##INFO=<ID=PV4,Number=4,Type=Float,Description="P-values for strand bias, baseQ bias, mapQ bias and tail distance bias">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=PC2,Number=2,Type=Integer,Description="Phred probability of the nonRef allele frequency in group1 samples being larger (,smaller) than in group2.">
+##INFO=<ID=PCHI2,Number=1,Type=Float,Description="Posterior weighted chi^2 P-value for testing the association between group1 and group2 samples.">
+##INFO=<ID=QCHI2,Number=1,Type=Integer,Description="Phred scaled PCHI2.">
+##INFO=<ID=PR,Number=1,Type=Integer,Description="# permutations yielding a smaller PCHI2.">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GL,Number=3,Type=Float,Description="Likelihoods for RR,RA,AA genotypes (R=ref,A=alt)">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="# high-quality bases">
+##FORMAT=<ID=SP,Number=1,Type=Integer,Description="Phred-scaled strand bias P-value">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##ID=<ID=dbSNPBuildID,Number=1,Type=Integer,Description="First dbSNP Build for RS">
+##ID=<ID=GMAF,Number=1,Type=Float,Description="Global Minor Allele Frequency [0, 0.5]; global population is 1000GenomesProject phase 1 genotype data from 629 individuals, released in the 11-23-2010 dataset">
+##ID=<ID=G5A,Number=0,Type=Flag,Description=">5% minor allele frequency in each and all populations">
+##ID=<ID=G5,Number=0,Type=Flag,Description=">5% minor allele frequency in 1+ populations">
+##ID=<ID=RS,Number=1,Type=Integer,Description="RS code">
+##ID=<ID=CNAGI,Number=1,Type=Integer,Description="# times that position is included in an INDEL at CNAG normal samples">
+##ID=<ID=CNAGS,Number=1,Type=Integer,Description="# times observed at CNAG normal samples">
+##ID=<ID=avsift,Number=1,Type=Integer,Description="SIFT score value based on ensembl55 (http://sift-dna.org/)">
+##ID=<ID=phylop,Number=1,Type=Integer,Description="PhyloP conservation score value">
+##ID=<ID=pp2,Number=1,Type=Integer,Description="PolyPhen2 score value (http://genetics.bwh.harvard.edu/pph2/)">
+##ID=<ID=mt,Number=1,Type=Integer,Description="MutationTaster score value (http://http://www.mutationtaster.org/)">
+##ID=<ID=lrt,Number=1,Type=Integer,Description="Lrt score value">
+##ID=<ID=gerp++,Number=1,Type=Integer,Description="GERP++ score value">
+##ID=<ID=esp5400_all,Number=1,Type=Integer,Description="alternative allele frequency in 5400 NHLBI exomes in all ethnicity">
+##ID=<ID=esp5400_ea,Number=1,Type=Integer,Description="alternative allele frequency in 5400 NHLBI exomes in European Americans">
+##ID=<ID=esp5400_aa,Number=1,Type=Integer,Description="alternative allele frequency in 5400 NHLBI exomes in African Americans">
+##ID=<ID=PhyloP_score,Number=1,Type=Integer,Description="PhyloP score, phyloPnew=1-0.5x10^phyloPori if phyloPori>0 or phyloPnew=0.5x10^phyloPori if phyloPori<0 [source dbNSFP_1.3]">
+##ID=<ID=SIFT_score,Number=1,Type=Integer,Description="SIFT score, SIFTnew=1-SIFTori [source dbNSFP_1.3]">
+##ID=<ID=Polyphen2_score,Number=1,Type=Integer,Description="Polyphen2 score [source dbNSFP_1.3]">
+##ID=<ID=LRT_score,Number=1,Type=Integer,Description="LRT score, LRTnew=1-LRTorix0.5 if ??????<1, or LRTnew=LRTorix0.5 if ??????>=1 [source dbNSFP_1.3]">
+##ID=<ID=LRT_pred,Number=1,Type=Integer,Description="LRT prediction, D(eleterious), N(eutral) or U(nknown) [source dbNSFP_1.3]">
+##ID=<ID=MutationTaster_pred,Number=1,Type=Integer,Description="MutationTaster prediction, "A" ("disease_causing_automatic"), "D" ("disease_causing"), "N" ("polymorphism") or "P" ("polymorphism_automatic") [source dbNSFP_1.3]">
+##ID=<ID=MutationTaster_score,Number=1,Type=Integer,Description="MutationTaster score [source dbNSFP_1.3]">
+##ID=<ID=LRT_Omega,Number=1,Type=Integer,Description="estimated nonsynonymous-to-synonymous-rate ratio, reported by LRT [source dbNSFP_1.3]">
+##ID=<ID=GERP_NR,Number=1,Type=Integer,Description="GERP++ neutral rate [source dbNSFP_1.3]">
+##ID=<ID=GERP_RS,Number=1,Type=Integer,Description="GERP++ RS score [source dbNSFP_1.3]">
+##SnpEffVersion="2.0.5d (build 2012-01-19), by Pablo Cingolani"
+##SnpEffCmd="SnpEff eff -c /project/production/DAT/apps/SNPEFF/snpEff_2_0_5d/snpEff.config -s MB99.chr9.snpEff.stats.html -o vcf GRCh37.65 MB99.chr9.vcf.gz "
+##INFO=<ID=EFF,Number=.,Type=String,Description="Predicted effects for this variant.Format: 'Effect ( Effefct_Impact | Functional_Class | Codon_Change | Amino_Acid_change | Gene_Name | Gene_BioType | Coding | Transcript | Exon [ | ERRORS | WARNINGS ] )' ">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	N401	N402
+chr9	131456174	.	G	T	142.0	.	DP=58;VDB=0.0208;AF1=0.25;AC1=1;DP4=16,20,8,11;MQ=35;FQ=143;PV4=1,7e-16,1,0.18;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),SPLICE_SITE_ACCEPTOR(HIGH||||SET|protein_coding|CODING|ENST00000372692|),SPLICE_SITE_ACCEPTOR(HIGH||||SET|protein_coding|CODING|ENST00000477806|),SPLICE_SITE_ACCEPTOR(HIGH||||SET|protein_coding|CODING|ENST00000494141|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	0/1:175,0,183:33:9:99	0/0:0,66,255:22:0:68
+chr9	131456385	.	GTATATATATATATATA	GTATATATATATATATATA	999.0	.	INDEL;DP=57;VDB=0.0393;AF1=0.9364;AC1=3;DP4=1,1,20,21;MQ=37;FQ=-35.3;PV4=1,1,1,1;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	1/1:255,63,0:21:0:67	1/1:255,0,4:22:0:3
+chr9	131456401	.	A	ATC	120.0	.	INDEL;DP=59;VDB=0.0369;AF1=0.5;AC1=2;DP4=8,8,14,11;MQ=36;FQ=123;PV4=0.76,2.2e-06,0.38,1;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	0/1:78,0,181:22:0:81	0/1:84,0,91:19:0:86
+chr9	131456519	RS=rs12004630;dbSNPBuildID=120;GMAF=0.1882	T	G	7.24	.	DP=78;VDB=0.0391;AF1=1;AC1=4;DP4=0,0,1,2;MQ=35;FQ=-32.2;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	1/1:27,6,0:2:0:7	1/1:13,3,0:1:0:5
+chr9	131456520	RS=rs75240207;dbSNPBuildID=131;GMAF=0.2724	T	G	9.81	.	DP=78;VDB=0.0373;AF1=1;AC1=4;DP4=0,0,0,3;MQ=35;FQ=-32.2;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	1/1:30,6,0:2:0:9	1/1:13,3,0:1:0:6
+chr9	131456521	RS=rs79752274;dbSNPBuildID=131;GMAF=0.2688	T	G	8.06	.	DP=77;VDB=0.0373;AF1=1;AC1=4;DP4=0,0,0,3;MQ=35;FQ=-32.2;EFF=DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000466009|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000477806|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480217|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000480536|),DOWNSTREAM(MODIFIER||||SET|protein_coding|CODING|ENST00000485056|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000322030|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372686|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372688|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000372692|),INTRON(MODIFIER||||SET|protein_coding|CODING|ENST00000409104|),TRANSCRIPT(MODIFIER||||SET|protein_coding|CODING|ENST00000494141|)	GT:PL:DP:SP:GQ	1/1:28,6,0:2:0:8	1/1:13,3,0:1:0:6

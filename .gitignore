@@ -1,6 +1,7 @@
 
 #
-proteins.uniprot.fa
+chip_seq_precomputed/
+Methylation/SimulatedData_PreAnalysed/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

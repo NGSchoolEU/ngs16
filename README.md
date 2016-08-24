@@ -18,6 +18,16 @@ ie. if you clone course materials in `/home/lpryszcz/ngschool` use:
 NGSchoolDir=/home/lpryszcz/ngschool
 ```
 
+## How to obtain a copy
+```bash
+# copy all workshop materials (~15G)
+rsync -avz USERNAME@ngschool.biocenter.sk:/ngschool/ /ngschool --exclude='.git'
+
+# alternatively use github (MUCH SLOWER!)
+sudo apt-get install git-lfs
+git lfs install
+git clone git@github.com:NGSchool2016/ngschool2016-materials.git --recursive
+```
 
 ## Server setup
 [Requested software](https://docs.google.com/spreadsheets/d/1uOQ2-1Yn_DyPd1_KFvpY-YmrS_87V6UZS19AG5akAQc/edit#gid=0)  

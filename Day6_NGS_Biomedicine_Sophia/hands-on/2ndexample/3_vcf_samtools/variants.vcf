@@ -1,0 +1,129 @@
+##fileformat=VCFv4.1
+##samtoolsVersion=0.1.19-44428cd
+##reference=file:///project/production/Genomes/fasta/hsapiens_coordsort_v37.fa
+##contig=<ID=chrM,length=16571,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d2ed829b8a1628d16cbeee88e88e39eb>
+##contig=<ID=chr1,length=249250621,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1b22b98cdeb4a9304cb5d48026a85128>
+##contig=<ID=chr2,length=243199373,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=a0d9851da00400dec1098a9255ac712e>
+##contig=<ID=chr3,length=198022430,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=641e4338fa8d52a5b781bd2a2c08d3c3>
+##contig=<ID=chr4,length=191154276,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=23dccd106897542ad87d2765d28a19a1>
+##contig=<ID=chr5,length=180915260,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=0740173db9ffd264d728f32784845cd7>
+##contig=<ID=chr6,length=171115067,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1d3a93a248d92a729ee764823acbbc6b>
+##contig=<ID=chr7,length=159138663,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=618366e953d6aaad97dbe4777c29375e>
+##contig=<ID=chr8,length=146364022,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=96f514a9929e410c6651697bded59aec>
+##contig=<ID=chr9,length=141213431,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=3e273117f15e0a400f01055d9f393768>
+##contig=<ID=chr10,length=135534747,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=988c28e000e84c26d552359af1ea2e1d>
+##contig=<ID=chr11,length=135006516,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=98c59049a2df285c76ffb1c6db8f8b96>
+##contig=<ID=chr12,length=133851895,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=51851ac0e1a115847ad36449b0015864>
+##contig=<ID=chr13,length=115169878,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=283f8d7892baa81b510a015719ca7b0b>
+##contig=<ID=chr14,length=107349540,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=98f3cae32b2a2e9524bc19813927542e>
+##contig=<ID=chr15,length=102531392,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=e5645a794a8238215b2cd77acb95a078>
+##contig=<ID=chr16,length=90354753,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=fc9b1a7b42b97a864f56b348b06095e6>
+##contig=<ID=chr17,length=81195210,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=351f64d4f4f9ddd45b35336ad97aa6de>
+##contig=<ID=chr18,length=78077248,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=b15d4b2d29dde9d3e4f93d1d0f2cbc9c>
+##contig=<ID=chr19,length=59128983,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1aacd71f30db8e561810913e0b72636d>
+##contig=<ID=chr20,length=63025520,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=0dec9660ec1efaaf33281c0d5ea2560f>
+##contig=<ID=chr21,length=48129895,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=2979a6085bfe28e3ad6f552f361ed74d>
+##contig=<ID=chr22,length=51304566,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=a718acaa6135fdca8357d5bfe94211dd>
+##contig=<ID=chrX,length=155270560,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=7e0e2e580297b7764e31dbc80c2540dd>
+##contig=<ID=chrY,length=59373566,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1e86411d73e6f00a10590f976be01623>
+##contig=<ID=chr1_gl000191_random,length=106433,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d75b436f50a8214ee9c2a51d30b2c2cc>
+##contig=<ID=chr1_gl000192_random,length=547496,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=325ba9e808f669dfeee210fdd7b470ac>
+##contig=<ID=chr4_ctg9_hap1,length=590426,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=fa24f81b680df26bcfb6d69b784fbe36>
+##contig=<ID=chr4_gl000193_random,length=189789,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=dbb6e8ece0b5de29da56601613007c2a>
+##contig=<ID=chr4_gl000194_random,length=191469,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=6ac8f815bf8e845bb3031b73f812c012>
+##contig=<ID=chr6_apd_hap1,length=4622290,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=fe71bc63420d666884f37a3ad79f3317>
+##contig=<ID=chr6_cox_hap2,length=4795371,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=18c17e1641ef04873b15f40f6c8659a4>
+##contig=<ID=chr6_dbb_hap3,length=4610396,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=2a3c677c426a10e137883ae1ffb8da3f>
+##contig=<ID=chr6_mann_hap4,length=4683263,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=9d51d4152174461cd6715c7ddc588dc8>
+##contig=<ID=chr6_mcf_hap5,length=4833398,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=efed415dd8742349cb7aaca054675b9a>
+##contig=<ID=chr6_qbl_hap6,length=4611984,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=094d037050cad692b57ea12c4fef790f>
+##contig=<ID=chr6_ssto_hap7,length=4928567,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=3b6d666200e72bcc036bf88a4d7e0749>
+##contig=<ID=chr7_gl000195_random,length=182896,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=5d9ec007868d517e73543b005ba48535>
+##contig=<ID=chr8_gl000196_random,length=38914,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d92206d1bb4c3b4019c43c0875c06dc0>
+##contig=<ID=chr8_gl000197_random,length=37175,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=6f5efdd36643a9b8c8ccad6f2f1edc7b>
+##contig=<ID=chr9_gl000198_random,length=90085,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=868e7784040da90d900d2d1b667a1383>
+##contig=<ID=chr9_gl000199_random,length=169874,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=569af3b73522fab4b40995ae4944e78e>
+##contig=<ID=chr9_gl000200_random,length=187035,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=75e4c8d17cd4addf3917d1703cacaf25>
+##contig=<ID=chr9_gl000201_random,length=36148,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=dfb7e7ec60ffdcb85cb359ea28454ee9>
+##contig=<ID=chr11_gl000202_random,length=40103,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=06cbf126247d89664a4faebad130fe9c>
+##contig=<ID=chr17_ctg5_hap1,length=1680828,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d89517b400226d3b56e753972a7cad67>
+##contig=<ID=chr17_gl000203_random,length=37498,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=96358c325fe0e70bee73436e8bb14dbd>
+##contig=<ID=chr17_gl000204_random,length=81310,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=efc49c871536fa8d79cb0a06fa739722>
+##contig=<ID=chr17_gl000205_random,length=174588,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d22441398d99caf673e9afb9a1908ec5>
+##contig=<ID=chr17_gl000206_random,length=41001,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=43f69e423533e948bfae5ce1d45bd3f1>
+##contig=<ID=chr18_gl000207_random,length=4262,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=f3814841f1939d3ca19072d9e89f3fd7>
+##contig=<ID=chr19_gl000208_random,length=92689,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=aa81be49bf3fe63a79bdc6a6f279abf6>
+##contig=<ID=chr19_gl000209_random,length=159169,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=f40598e2a5a6b26e84a3775e0d1e2c81>
+##contig=<ID=chr21_gl000210_random,length=27682,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=851106a74238044126131ce2a8e5847c>
+##contig=<ID=chrUn_gl000211,length=166566,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=7daaa45c66b288847b9b32b964e623d3>
+##contig=<ID=chrUn_gl000212,length=186858,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=563531689f3dbd691331fd6c5730a88b>
+##contig=<ID=chrUn_gl000213,length=164239,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=9d424fdcc98866650b58f004080a992a>
+##contig=<ID=chrUn_gl000214,length=137718,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=46c2032c37f2ed899eb41c0473319a69>
+##contig=<ID=chrUn_gl000215,length=172545,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=5eb3b418480ae67a997957c909375a73>
+##contig=<ID=chrUn_gl000216,length=172294,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=642a232d91c486ac339263820aef7fe0>
+##contig=<ID=chrUn_gl000217,length=172149,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=6d243e18dea1945fb7f2517615b8f52e>
+##contig=<ID=chrUn_gl000218,length=161147,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1d708b54644c26c7e01c2dad5426d38c>
+##contig=<ID=chrUn_gl000219,length=179198,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=f977edd13bac459cb2ed4a5457dba1b3>
+##contig=<ID=chrUn_gl000220,length=161802,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=fc35de963c57bf7648429e6454f1c9db>
+##contig=<ID=chrUn_gl000221,length=155397,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=3238fb74ea87ae857f9c7508d315babb>
+##contig=<ID=chrUn_gl000222,length=186861,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=6fe9abac455169f50470f5a6b01d0f59>
+##contig=<ID=chrUn_gl000223,length=180455,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=399dfa03bf32022ab52a846f7ca35b30>
+##contig=<ID=chrUn_gl000224,length=179693,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d5b2fc04f6b41b212a4198a07f450e20>
+##contig=<ID=chrUn_gl000225,length=211173,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=63945c3e6962f28ffd469719a747e73c>
+##contig=<ID=chrUn_gl000226,length=15008,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1c1b2cd1fccbc0a99b6a447fa24d1504>
+##contig=<ID=chrUn_gl000227,length=128374,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=a4aead23f8053f2655e468bcc6ecdceb>
+##contig=<ID=chrUn_gl000228,length=129120,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=c5a17c97e2c1a0b6a9cc5a6b064b714f>
+##contig=<ID=chrUn_gl000229,length=19913,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=d0f40ec87de311d8e715b52e4c7062e1>
+##contig=<ID=chrUn_gl000230,length=43691,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=b4eb71ee878d3706246b7c1dbef69299>
+##contig=<ID=chrUn_gl000231,length=27386,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=ba8882ce3a1efa2080e5d29b956568a4>
+##contig=<ID=chrUn_gl000232,length=40652,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=3e06b6741061ad93a8587531307057d8>
+##contig=<ID=chrUn_gl000233,length=45941,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=7fed60298a8d62ff808b74b6ce820001>
+##contig=<ID=chrUn_gl000234,length=40531,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=93f998536b61a56fd0ff47322a911d4b>
+##contig=<ID=chrUn_gl000235,length=34474,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=118a25ca210cfbcdfb6c2ebb249f9680>
+##contig=<ID=chrUn_gl000236,length=41934,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=fdcd739913efa1fdc64b6c0cd7016779>
+##contig=<ID=chrUn_gl000237,length=45867,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=e0c82e7751df73f4f6d0ed30cdc853c0>
+##contig=<ID=chrUn_gl000238,length=39939,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=131b1efc3270cc838686b54e7c34b17b>
+##contig=<ID=chrUn_gl000239,length=33824,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=99795f15702caec4fa1c4e15f8a29c07>
+##contig=<ID=chrUn_gl000240,length=41933,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=445a86173da9f237d7bcf41c6cb8cc62>
+##contig=<ID=chrUn_gl000241,length=42152,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=ef4258cdc5a45c206cea8fc3e1d858cf>
+##contig=<ID=chrUn_gl000242,length=43523,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=2f8694fc47576bc81b5fe9e7de0ba49e>
+##contig=<ID=chrUn_gl000243,length=43341,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=cc34279a7e353136741c9fce79bc4396>
+##contig=<ID=chrUn_gl000244,length=39929,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=0996b4475f353ca98bacb756ac479140>
+##contig=<ID=chrUn_gl000245,length=36651,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=89bc61960f37d94abf0df2d481ada0ec>
+##contig=<ID=chrUn_gl000246,length=38154,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=e4afcd31912af9d9c2546acf1cb23af2>
+##contig=<ID=chrUn_gl000247,length=36422,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=7de00226bb7df1c57276ca6baabafd15>
+##contig=<ID=chrUn_gl000248,length=39786,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=5a8e43bec9be36c7b49c84d585107776>
+##contig=<ID=chrUn_gl000249,length=38502,URL=file:/project/production/Genomes/fasta/hsapiens_coordsort_v37.fa,md5=1d78abec37c15fe29a275eb08d5af236>
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="# high-quality ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Root-mean-square mapping quality of covering reads">
+##INFO=<ID=FQ,Number=1,Type=Float,Description="Phred probability of all samples being the same">
+##INFO=<ID=AF1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele frequency (assuming HWE)">
+##INFO=<ID=AC1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele count (no HWE assumption)">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=IS,Number=2,Type=Float,Description="Maximum number of reads supporting an indel and fraction of indel reads">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=G3,Number=3,Type=Float,Description="ML estimate of genotype frequencies">
+##INFO=<ID=HWE,Number=1,Type=Float,Description="Chi^2 based HWE test P-value based on G3">
+##INFO=<ID=CLR,Number=1,Type=Integer,Description="Log ratio of genotype likelihoods with and without the constraint">
+##INFO=<ID=UGT,Number=1,Type=String,Description="The most probable unconstrained genotype configuration in the trio">
+##INFO=<ID=CGT,Number=1,Type=String,Description="The most probable constrained genotype configuration in the trio">
+##INFO=<ID=PV4,Number=4,Type=Float,Description="P-values for strand bias, baseQ bias, mapQ bias and tail distance bias">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=PC2,Number=2,Type=Integer,Description="Phred probability of the nonRef allele frequency in group1 samples being larger (,smaller) than in group2.">
+##INFO=<ID=PCHI2,Number=1,Type=Float,Description="Posterior weighted chi^2 P-value for testing the association between group1 and group2 samples.">
+##INFO=<ID=QCHI2,Number=1,Type=Integer,Description="Phred scaled PCHI2.">
+##INFO=<ID=PR,Number=1,Type=Integer,Description="# permutations yielding a smaller PCHI2.">
+##INFO=<ID=QBD,Number=1,Type=Float,Description="Quality by Depth: QUAL/#reads">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Read Position Bias">
+##INFO=<ID=MDV,Number=1,Type=Integer,Description="Maximum number of high-quality nonRef reads in samples">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias (v2) for filtering splice-site artefacts in RNA-seq data. Note: this version may be broken.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GL,Number=3,Type=Float,Description="Likelihoods for RR,RA,AA genotypes (R=ref,A=alt)">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="# high-quality bases">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality non-reference bases">
+##FORMAT=<ID=SP,Number=1,Type=Integer,Description="Phred-scaled strand bias P-value">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	control	tumor
+chr16	81077915	.	T	C	999	.	DP=481;VDB=4.473766e-01;AF1=1;AC1=4;DP4=0,0,267,189;MQ=35;FQ=-286	GT:PL:DP:SP:GQ	1/1:255,255,0:182:0:99	1/1:255,255,0:274:0:99
